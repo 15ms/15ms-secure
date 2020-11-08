@@ -21,7 +21,7 @@ describe('15ms-secure', function () {
       secret: 'a simple key',
       maxage: 1000
     });
-    assert.equal(secure.verifyHMAC({}), false);
+    assert.strictEqual(secure.verifyHMAC({}), false);
   });
 
   it('hash is url friendly', () => {
